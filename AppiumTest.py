@@ -14,12 +14,12 @@ class AppiumTest(unittest.TestCase):
         caps["noReset"] = "true"
 
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
-        self.driver.implicitly_wait(3)
+        self.driver.implicitly_wait(5)
 
     def test_case(self):
         if self.driver.find_elements_by_id("bt_close") != []:
             self.driver.find_element_by_id("bt_close").click()
-        self.driver.find_element(MobileBy.XPATH, "//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.ImageView[3]").click()
+        self.driver.find_element(MobileBy.XPATH, "//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.ImageView[3]").click()
         self.driver.find_element_by_id("cn.rainbow.westore:id/tv_search").click()
         self.driver.find_element_by_id("cn.rainbow.westore:id/titlebar_center_title").send_keys("月饼")
         self.driver.press_keycode(66)
