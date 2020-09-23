@@ -1,4 +1,4 @@
 # testRainbowApp
  Appium test demo
 
-![Imgurl](https://imgur.com/um0oF1u.gif)
+![ScreenRecord](https://i.loli.net/2020/09/23/ctg45mHnzSKVZhX.gif)
